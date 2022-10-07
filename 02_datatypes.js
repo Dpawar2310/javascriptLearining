@@ -13,6 +13,6 @@ console.log("-------------------------------");
 var first_name;
 console.log(typeof first_name);
 console.log("------------------------------");
-var age;
+var age=null;
 console.log(typeof age);
 console.log("------------------------------");
