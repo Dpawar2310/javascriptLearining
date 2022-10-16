@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #input_text {
+        margin: 5vh 0px 0vh 10px;
+        width: 217px;
+        height: 5px;        
+        border: 2px solid black;
+        box-shadow: -2px -2px 2px gray, 2px 2px 2px gray;;
+    }
+
+    .number {
+        border: 2px solid maroon;
+        background-color: #e6efec;
+        border-radius: 5px;
+        height: 68vh;
+        margin: 0px 40%;
+        margin-top: 80PX;
+    }
+    .number h3{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .number input {
+        padding: 15px ;
+        margin: 10px 5px;
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+        font-weight: bold;        
+    }
+    .operator{
+    
+        font-weight: bold;        
+        float: right;
+        width: 70px;
+        background-color: #c3e6e6;
+    }
+    .none{
+        display: none;
+    }
+    .clear_text{
+        width:257px;
+        height: 40px;
+        font-weight: bold;        
+    }
+    #equal{
+        width: 110px;
+        background-color: #fae4c8;
+    }
+
+</style>
+
+<body>
+        <div class="number">
+            <h3>Calculator</h3>
+            <input type="text" id="input_text" placeholder="0" >
+            <input type="button" value="1">
+            <input type="button" value="2">
+            <input type="button" value="3">
+            <input type="button" value="/" class="operator" >
+            <input type="button" value="4">
+            <input type="button" value="5">
+            <input type="button" value="6">
+            <input type="button" value="-" class="operator">
+            <input type="button" value="7">
+            <input type="button" value="8">
+            <input type="button" value="9">
+            <input type="button" value="+" class="operator">
+            <input type="button" value="*" class="operator">
+            <input type="button" value="0" class="none">
+            <input type="button" value="0">
+            <input type="button" value="=" id="equal"  >
+            <input type="button" value="Clear" class="clear_text">
+        </div>
+    </div>
+
+</body>
+
+</html>
