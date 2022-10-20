@@ -54,27 +54,30 @@ function getSquare() {
 getSquare();
 
 console.log("===============Question 5.Even=================");
-console.log("");
-
-function oddPositionChars(givenstring)
-{
-    console.log(`Given String is: ${givenstring}`);
-    lostring=givenstring.toLowercase();
-    var result="";
-    for (let index = 0; index < lostring.length; index++) {
-     var char = lostring.charAt(index);
-     if (index%2!=0 && char!=" ") {
-        //console.log(char);
-        result = result + char;
-     }
-        
+function evenPositionChar(str){
+    for (let index = 0; index < str.length; index++) {
+        var char=str.charAt(index);
+        if (index %2==0 && char!=(" ")) {
+            console.log(char);
+        }
     }
-    console.log(`odd character from given string are: ${result}`);
 }
-oddPositionChars("Hard work always pays back")
-console.log("");
-oddPositionChars("Soon i will be Angular IT Champ")
-console.log("");
+evenPositionChar("Hard Work Always Pays Back");
+console.log("*******************************");
+evenPositionChar("Soon I Will be Angular IT Champ");
+console.log("======================================");
+
+function oddPositionChar(str){
+    for (let index = 0; index < str.length; index++) {
+    var char=str.charAt(index);
+    if (index%2!=0 && char!=(" ")) {
+      console.log(char);  
+    }
+    }
+}
+    oddPositionChar("Hard Work Always Pays Back");
+    console.log("******************************");
+    oddPositionChar("Soon I Will be Angular IT Champ")
 
 
 
