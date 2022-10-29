@@ -1,0 +1,24 @@
+function primeNumber(numberToCheck){
+    for (let index = 2; index < numberToCheck; index++) {
+      if(numberToCheck%index==0) {
+          return false;
+      }
+    }
+    return true;
+  }
+  
+  console.log(primeNumber(11));
+  console.log(primeNumber(9));
+  console.log(primeNumber(29));
+  
+  
+  function primeNumber(number) {
+    for (let index = 2; index <= number; index++) {
+      if (number%index==0) {
+        return false;
+        
+      }
+      return true;
+    }
+  }
+  console.log(primeNumber());
